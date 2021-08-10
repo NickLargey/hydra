@@ -1,0 +1,21 @@
+body,
+html {
+  background-color: black;
+  margin: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h1 {
+  color: cadetblue;
+}
+canvas {
+  z-index: 0;
+  width: 99vw;
+  height: 99vh;
+}
+
+main {
+  z-index: 1;
+  position: absolute;
+
+  top: 0;
+}
