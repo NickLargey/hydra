@@ -60,4 +60,8 @@ const mouser = () => {
     .mask(voronoi(64, 4, 10).brightness(0.5))
     .mult(shape(3))
     .out(o0);
+
+  window.addEventListener("click", function (e) {
+    console.log(mouse.x, mouse.y, window.innerWidth, window.innerHeight);
+  });
 };
