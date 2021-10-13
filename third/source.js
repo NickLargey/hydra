@@ -8,7 +8,7 @@ var hydra = new Hydra({
   enableStreamCapture: false,
 });
 
-osc(80, -0.1, 0.3)
+osc(1, -0.1, 0.3)
   .diff(osc(60, 0.01))
   .modulateScale(
     noise(2.5, 0.25).modulateScale(osc(15).rotate(() => Math.sin(time / 2))),
