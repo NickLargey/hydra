@@ -1,4 +1,4 @@
-var canvas = document.getElementsByTagName("canvas")[0];
+var canvas = document.getElementById("c");
 canvas.width = window.innerWidth * 2;
 canvas.height = window.innerHeight * 2;
 
@@ -21,4 +21,18 @@ osc(1, -0.1, 0.3)
   .brightness(0.01)
   .contrast(1)
   .modulateScale(osc(2), -0.1)
+  .out();
+
+var canvas1 = document.getElementById("c1");
+canvas1.width = window.innerWidth * 2;
+canvas1.height = window.innerHeight * 2;
+
+var hydra1 = new Hydra({
+  canvas: canvas1,
+  detectAudio: false,
+  enableStreamCapture: false,
+});
+
+osc(10, 0, 1)
+  .saturate(({ time }) => Math.sin(time) * 10)
   .out();
