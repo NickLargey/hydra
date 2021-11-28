@@ -3,9 +3,8 @@ html {
   background-color: black;
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  width: 99vw;
-  height: 99vh;
-  cursor: crosshair;
+  width: 100vw;
+  height: 100vh;
 }
 h1 {
   color: cadetblue;

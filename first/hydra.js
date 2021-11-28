@@ -8,7 +8,7 @@ var hydra = new Hydra({
   enableStreamCapture: false,
 });
 
-const bitshift = () =>
+const bitshift = () => {
   osc(10, 0.1, 0.8)
     .rotate(0, 1)
     .pixelate(16, 16)
@@ -16,6 +16,7 @@ const bitshift = () =>
     .invert(2)
     .modulate(noise(5 << 1), 2 >> 1)
     .out(o0);
+};
 
 const mask = () => {
   osc(10, -0.25, 1)
